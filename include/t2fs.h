@@ -46,24 +46,4 @@ typedef struct {
     unsigned long fileSize;
 } DIRENT2;
 
-int identify2 (char *name, int size);
-
-FILE2 create2 (char *filename);
-int delete2 (char *filename);
-FILE2 open2 (char *filename);
-int close2 (FILE2 handle);
-int read2 (FILE2 handle, char *buffer, int size);
-int write2 (FILE2 handle, char *buffer, int size);
-int seek2 (FILE2 handle, unsigned int offset);
-
-int mkdir2 (char *pathname);
-int rmdir2 (char *pathname);
-
-DIR2 opendir2 (char *pathname);
-int readdir2 (DIR2 handle, DIRENT2 *dentry);
-int closedir2 (DIR2 handle);
-
-int chdir2 (char *pathname);
-int getcwd2 (char *pathname, int size);
-
 #endif

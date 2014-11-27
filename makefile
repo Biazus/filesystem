@@ -1,6 +1,5 @@
 all:
 	rm -rf *.o
-	rm ./lib/libt2fs.a
 	gcc -c ./src/file.c -Wall
 	gcc -c ./src/directory.c -Wall
 	gcc -c ./src/utility.c -Wall

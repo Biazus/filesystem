@@ -6,29 +6,27 @@
 #include "../include/apidisk.h"
 
 int mkdir2 (char *pathname){
-	return 1;
+	
+	return 0;
 }
 
 int rmdir2 (char *pathname){
-	return 1;
+	return 0;
 }
 
-//DIR2 opendir2 (char *pathname){
-	
-//}
 
 int readdir2 (DIR2 handle, DIRENT2 *dentry){
-	return 1;
+	return 0;
 }
 
 int closedir2 (DIR2 handle){
-	return 1;
+	return 0;
 }
 
 int chdir2 (char *pathname){
-	return 1;
+	return 0;
 }
 
 int getcwd2 (char *pathname, int size){
-	return 1;
+	return 0;
 }

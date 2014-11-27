@@ -1,1 +1,16 @@
 int identify2 (char *name, int size);
+char* ExtendName(char *nome);
+int read_block(unsigned int block, char *buffer);
+int write_block(unsigned int block, char *buffer);
+void GetDiskInformation();
+void DiskInit();
+char *getfileName(char *path);
+int readRecordsDir(int recordsDir);
+int InsertRecord(int blockNumber, int offset, t2fs_record* newrecord);
+int searchEmptyDescriptor();
+DWORD getNextReadableBlock(t2fs_record rec, DWORD blockNumber);
+t2fs_record getRecord(char *nome, t2fs_record directoryRec);
+DWORD searchWritableBlock(t2fs_record* rec);
+t2fs_record getParentDirectory(char *nome);
+void updateRecord(t2fs_record parentDir, t2fs_record changedRec, DWORD location);
+int getDirectoryPositionByName(t2fs_record directoryRec, char* name);

@@ -26,7 +26,7 @@ short int rootSize = 16;
 short int fileEntry = 64;
 
 int identify2 (char *name, int size){
-	name = "Pedro Morales  Miller Biazus 187984\0";
+	name = "Pedro Morales 143049 Miller Biazus 187984\0";
 	return 1;
 }
 
